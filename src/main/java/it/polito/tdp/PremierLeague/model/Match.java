@@ -9,11 +9,11 @@ public class Match {
 	Integer teamHomeFormation;
 	Integer teamAwayFormation;
 	Integer resultOfTeamHome;
-	
+	LocalDateTime date;
 	String teamHomeNAME;
 	String teamAwayNAME;
-
-	LocalDateTime date;
+	double pesoIn;
+	double pesoOut;
 	
 	public Match(Integer matchID, Integer teamHomeID, Integer teamAwayID, Integer teamHomeFormation,
 			Integer teamAwayFormation, Integer resultOfTeamHome, LocalDateTime date, String teamHomeNAME, String teamAwayNAME) {
@@ -94,6 +94,22 @@ public class Match {
 
 	public void setTeamAwayNAME(String teamAwayNAME) {
 		this.teamAwayNAME = teamAwayNAME;
+	}
+
+	public double getPesoIn() {
+		return pesoIn;
+	}
+
+	public void setPesoIn(double pesoIn) {
+		this.pesoIn = pesoIn;
+	}
+
+	public double getPesoOut() {
+		return pesoOut;
+	}
+
+	public void setPesoOut(double pesoOut) {
+		this.pesoOut = pesoOut;
 	}
 
 	@Override
